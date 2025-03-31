@@ -1,0 +1,160 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.login-container {
+  padding: 10px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  height: 100%;
+  width: 60%;
+}
+.photo {
+  height: 100%;
+  width: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.img {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.signup-parent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 94%;
+}
+
+.sign-up {
+  height: 100%;
+  padding: 0 10px;
+  width: 62%;
+}
+.headingg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.sign-in-instead {
+  font-size: 14px;
+  color: blue;
+}
+.signup-form {
+  height: 84%;
+}
+
+.form-group {
+  margin-bottom: 10px;
+  color: #65676b;
+}
+
+.inp {
+  padding: 10px;
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #d4d4d4;
+}
+.span {
+  color: #404144;
+  text-decoration: underline;
+}
+.tac-label {
+  display: flex;
+  font-size: 14px;
+  color: #65676b;
+  text-align: center;
+  white-space: nowrap;
+}
+.checkbox-group {
+  display: flex;
+}
+
+.submit-btn {
+  background-color: #c0c0c0;
+  color: white;
+  width: 400px;
+  padding: 14px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 20px;
+}
+.submit-btn:hover {
+  background-color: rgb(89, 89, 245);
+}
+.policy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.last-para {
+  margin-top: 80px;
+  font-size: 10px;
+  color: #676b5f;
+  font-family: "Inter", sans-serif;
+  width: 800px;
+  text-align: start;
+}
+.last-span {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+  .login-container {
+    flex-direction: column;
+    height: auto;
+    @media screen and (max-width: 480px) {
+      .login-container {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+      }
+    }
+
+    .photo {
+      display: none; 
+    }
+
+    .login-form {
+      width: 100%;
+    }
+
+    .signup-parent-container {
+      flex-direction: column;
+      height: auto;
+    }
+
+    .sign-up {
+      width: 100%;
+      padding: 0;
+    }
+
+    .inp,
+    .submit-btn {
+      width: 100%;
+    }
+
+    .last-para {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

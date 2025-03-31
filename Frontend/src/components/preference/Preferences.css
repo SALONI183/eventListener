@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.left {
+  width: 60%;
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right {
+  width: 40%;
+  flex: 1;
+  overflow: hidden;
+}
+
+.logo-div {
+  height: 100px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: bolder;
+  margin-top: -30px;
+  text-align: start;
+}
+
+.bold {
+  font-weight: bolder;
+  color: black;
+}
+
+.input {
+  padding: 14px 16px;
+  font-size: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  width: 100%;
+  outline: none;
+}
+
+.label {
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.categoryBtn {
+  color: black;
+  padding: 14px;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.categoryBtn:hover {
+  background-color: #f5f5f5;
+  color: black;
+}
+
+.selected {
+  background-color: #1a73e8;
+  color: white;
+  border-color: #1a73e8;
+}
+
+.continueBtn {
+  background-color: #1a73e8;
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.continueBtn:hover {
+  background-color: #1669c1;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+  }
+
+  .left {
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .right {
+    width: 100%;
+    display: none; 
+  }
+
+  .logo-div {
+    height: 80px;
+    width: 130px;
+    margin-bottom: 20px;
+  }
+
+  .heading {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .input {
+    font-size: 14px;
+    padding: 12px;
+    margin-bottom: 20px;
+  }
+
+  .label {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .categoryBtn {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .continueBtn {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px;
+    border-radius: 20px;
+  }
+}

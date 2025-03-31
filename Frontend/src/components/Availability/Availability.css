@@ -1,0 +1,214 @@
+.main-conta {
+  height: 100vh;
+  width: 100%;
+}
+
+.availability-container {
+  max-width: 700px;
+  margin: auto;
+  margin-top: 30px;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.avail-head {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+.avail-head h2,
+p {
+  color: black;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tabs button {
+  padding: 10px 12px;
+  border: none;
+  background: #e0e0e0;
+  cursor: pointer;
+  width: 200px;
+  color: black;
+}
+
+.tabs button.active {
+  background: #007bff;
+  color: white;
+}
+
+.availability-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.day-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.time-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.time-slot {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.add-btn,
+.remove-btn {
+  border: none;
+  background: #007bff;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.remove-btn {
+  background: red;
+}
+
+.save-btn {
+  display: block;
+  margin-top: 20px;
+  background: green;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+.success-message {
+  margin-top: 10px;
+  font-size: 14px;
+  color: green;
+  font-weight: bold;
+}
+.day-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.day-row input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.day-row label {
+  font-size: 16px;
+  font-weight: 500;
+  min-width: 100px;
+}
+
+.time-inputs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.time-slot {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.remove-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-btn {
+  background: green;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .availability-container {
+    width: 95%;
+    padding: 10px;
+    overflow-x: hidden;
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  .tabs button {
+    flex: 1;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .availability-box {
+    padding: 15px;
+  }
+
+  .day-row {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .time-inputs {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .time-slot {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .time-slot input {
+    width: 80px;
+  }
+
+  .add-btn,
+  .remove-btn {
+    padding: 5px 8px;
+    font-size: 14px;
+  }
+
+  .save-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+  .avail-head {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
