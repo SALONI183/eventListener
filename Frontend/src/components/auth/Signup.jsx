@@ -70,7 +70,7 @@ const Signup = () => {
 
     // API call
     try {
-      const response = await fetch("http://localhost:5053/api/auth/signup", {
+      const response = await fetch("https://eventlistener-3.onrender.com/api/auth/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

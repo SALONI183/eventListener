@@ -64,14 +64,14 @@ const CreateEvent = ({ eventData, onClose }) => {
       const token = localStorage.getItem("token");
 
       if (!formData.hostId) {
-        console.error("❌ hostId is missing! Cannot create event.");
+        console.error("hostId is missing! Cannot create event.");
         alert("Error: Missing host information. Please re-login.");
         return;
       }
 
       console.log("🔹 Data Sent to Backend:", formData);
 
-      const response = await fetch("http://localhost:5053/api/events", {
+      const response = await fetch("https://eventlistener-3.onrender.com/api/events", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

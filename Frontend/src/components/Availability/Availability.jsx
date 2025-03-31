@@ -65,7 +65,7 @@ const Availability = () => {
 
     try {
       await axios.post(
-        "http://localhost:5053/api/availability",
+        "https://eventlistener-3.onrender.com/api/availability",
         { availability },
         { headers: { Authorization: `Bearer ${token}` } }
       );

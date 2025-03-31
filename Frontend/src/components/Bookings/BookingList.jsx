@@ -7,23 +7,8 @@ const BookingList = ({ activeTab }) => {
 
   
   useEffect(() => {
-    // const fetchBookings = async () => {
-    //   try {
-    //     const token = localStorage.getItem("token");
-    //     if (!token) {
-    //       console.error("No token found, user not authenticated.");
-    //       return;
-    //     }
-
-    //     const { data } = await axios.get("http://localhost:5053/api/bookings", {
-    //       headers: { Authorization: `Bearer ${token}` },
-    //     });
-
-    //     setBookings(data?.[activeTab] || []);
-    //   } catch (error) {
-    //     console.error("Error fetching bookings:", error);
-    //   }
-    // };
+    
+    
     const fetchBookings = async () => {
       try {
         const token = localStorage.getItem("token");
@@ -32,7 +17,7 @@ const BookingList = ({ activeTab }) => {
           return;
         }
     
-        const { data } = await axios.get("http://localhost:5053/api/bookings", {
+        const { data } = await axios.get("https://eventlistener-3.onrender.com/api/bookings", {
           headers: { Authorization: `Bearer ${token}` },
         });
     

@@ -19,7 +19,7 @@ const Settings = () => {
         const token = localStorage.getItem("token");
         if (!token) return;
 
-        const { data } = await axios.get("http://localhost:5053/api/user", {
+        const { data } = await axios.get("https://eventlistener-3.onrender.com/api/user", {
           headers: { Authorization: `Bearer ${token}` },
         });
 
@@ -54,7 +54,7 @@ const Settings = () => {
       if (!token) return;
 
       await axios.put(
-        "http://localhost:5053/api/user/update",
+        "https://eventlistener-3.onrender.com/api/user/update",
         {
           firstName: formData.firstName,
           lastName: formData.lastName,

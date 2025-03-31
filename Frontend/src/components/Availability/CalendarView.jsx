@@ -17,7 +17,7 @@ const CalendarView = () => {
     const fetchMeetings = async () => {
       try {
         const token = localStorage.getItem("token");
-        const response = await axios.get("http://localhost:5053/api/bookings", {
+        const response = await axios.get("https://eventlistener-3.onrender.com/api/bookings", {
           headers: { Authorization: `Bearer ${token}` },
         });
 
@@ -85,7 +85,7 @@ const CalendarView = () => {
         />
       </div>
 
-      
+      {/* Time Labels + Calendar */}
       <div className="calendar-wrapper">
         {/* Left Time Labels */}
         <div className="time-labels">

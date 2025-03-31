@@ -13,7 +13,7 @@ const EventsList = () => {
     const fetchEvents = async () => {
       try {
         const token = localStorage.getItem("token");
-        const response = await fetch("http://localhost:5053/api/events", {
+        const response = await fetch("https://eventlistener-3.onrender.com/api/events", {
           headers: { Authorization: `Bearer ${token}` },
         });
 

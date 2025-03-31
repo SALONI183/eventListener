@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5053/api/events"; 
+const API_URL = "https://eventlistener-3.onrender.com/api/events"; 
 
 // Set auth headers
 const getAuthHeaders = () => {

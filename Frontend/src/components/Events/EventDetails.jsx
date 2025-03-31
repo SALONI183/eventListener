@@ -51,7 +51,7 @@ const EventDetails = () => {
       }
 
       const response = await axios.put(
-        `http://localhost:5053/api/events/${id}`,
+        `https://eventlistener-3.onrender.com/api/events/${id}`,
         formData,
         {
           headers: {
